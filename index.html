@@ -6,12 +6,11 @@
 	<title>Freelancer</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat" rel="stylesheet">
-	<link rel="stylesheet" href="icomoon/">
+	<link rel="stylesheet" href=icomoon/fa fa-star>
 
 </head>
 
-<body>
-
+<!-- definiendo encabezado de la página, nombre de la página + menú -->
 <header>
 	<h1><strong>Start BootStrap</strong></h1>
 
@@ -22,6 +21,8 @@
 	</div>
 </header>
 
+<body>
+<!-- insertando imagen principal en el cuerpo e la página + texto-->
 <div class="start">
 	<img src="assets/images/profile.png" id="mono">
  	<h1>Start BootStrap</h1>
@@ -31,12 +32,13 @@
 	<p>WEb developer - graphic artist - user experience desigen</p>
 </div>
 
+<!-- definiendo las imagenes a mostrar. 3 elementos cada 2 filas-->
 <div class="portfolio">
 	<p>PortoFolio</p>
 	<h1></h1>
 	<h2></h2>
 	<br><div class="imagenesup">
-		<img src=alt="assets/images/portfolio/cabin.png" class="foto">
+		<img src="assets/images/portfolio/cabin.png" class="foto">
 		<img src="assets/images/portfolio/cake.png" class="foto">
 		<img src="assets/images/portfolio/circus.png" class="foto">
 	</div>
@@ -47,6 +49,7 @@
 	</div>
 </div>
 
+<!-- sección donde se añade texto en dos columnas -->
 <div class="about">
 	<h1>About</h1>
 	<h2 ></h2>
@@ -55,9 +58,11 @@
 		<p class="left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customizatio</p>
 
 		<p class="right">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+		<input type="submit" value="Download Theme" class="boton">
 	</div>
 </div>
 
+<!-- sección ingreso de datos de usuario (no activa) + botón de envío de datos (no activo)-->
 <div class="contacto">
 	<p id="titulo2">Contact Me</p>
 	<ul>
@@ -68,23 +73,36 @@
 		<li>Phone Number</li>
 		<hr>
 		<li>Message</li>
+		<hr id="lineafin">
 	</ul>
+	<input type="submit" value="Send" class="boton">
 	<h2 ></h2>
+</div>
 
+<!-- pie de página, adjuntando información de la página y datos de contacto -->
 <footer>
-	<div class="final"></div>
-		<p id="lista"></p>
-		<ul>
-  			<li><a href="#">LOCATION</a><p>3481 Melrose Place Beverly Hills, CA 90210</p></li>
-  			<li><a href="iconos">AROUND THE WEB</a>
-			<p><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></p>
-			<p><i class="fa-google-plus" aria-hidden="true"></i></p>
-			<p><i class="fa fa-fw fa-twitter"aria-hidden="true"></i></p>
-			</li>
-  			<li><a href="#">ABOUT FREELANCER</a><p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p></li>
-		</ul>
-		</div>
-		<p ></p>
+	<table class="final">
+		<thead id="titulos">
+			<tr>
+				<th>LOCATION</th>
+				<th>AROUND THE WEB</th>
+				<th>ABOUT FREELANCER</th>
+				</tr>
+		</thead>
+		<tbody class="contenido">
+			<tr>
+				<td id="uno">3481 Melrose Place Beverly Hills, CA 90210</td>
+				<td class="iconos">
+					<p><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></p>
+					<p><i class="fa-google-plus" aria-hidden="true"></i></p>
+					<p><i class="fa fa-fw fa-twitter"aria-hidden="true"></i></p>
+				</td>
+				<td id="dos">Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</td>
+			</tr>
+		</tbody>
+	</table>  
+	<div class="finpag">
+		<p>Copyright © Your Website 2017</p>
 	</div>
 </footer>
 	
